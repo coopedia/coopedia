@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coopedia</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(38.5434024,-121.767378),
+        zoom:15,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Coopedia</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav w3-green w3-large">
+            <li class="active"><a href="#">Homepage<span class="sr-only">(current)</span></a></li>
+            <li><a href="https://medium.com/@master97/" target="_blank">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div id ="slide">
+          <img class="mySlides" src="images/4.jpg" style="width:100%">
+        </div>
+
+        <div id ="table">
+          <h2>Understanding the Domes and Our Values:</h2>
+          <p class="MsoNormal">
+            The Community PACTS + Gratitude guide and inform our vision, mission, and grandest dreams.  These are the foundations upon which our community is built and you are invited to build them with us.  These values are baked into the core of our community, built-in from the beginning, and perpetually assessed and reinforced.  As such, they give structure and standards to which we hold ourselves, individually and collectively, accountable.</p>
+          
+          Community<br>
+          <ul><li>At first glance, it might seem easy to define community. Look closer, however, and you’ll realize that it runs deep. More so than simple geography, common ancestry, heritage, and customs, we believe that community is about coming together with common goals.  We are continually shaping and being shaped by our networks of communities.  We seek to build and strengthen communities which align with our core values (PACTS) in order to share and celebrate a life based on love and gratitude.</li></ul>
+
+          P: Presence & Participation<br>
+          <ul><li>
+          These PACTS are the foundation for greater things. By being mindful and practicing these values, we believe we can more authentically live and truly express ourselves. This requires both presence, which is being here and now, and participation, which is contributing to and living in the present. We want you to be your fullest self by living, and giving, in community.</li></ul>
+
+          A: Awesomeness<br>
+          <ul><li>
+          What does it mean to be awesome? We see it as being authentic. Everyone is awesome, just like everyone is beautiful. So when you live authentically – and you live and love with intention – you connect to your inner awesome, resonate your truth, and find yourself sharing that awesomeness with others.</li></ul>
+
+          C: Collaboration<br>
+          <ul><li>
+          Collaboration is our shared agreement to co-create communities that resonate with love. We encourage one another to go beyond simply surviving, we seek to see ourselves thrive. By jumping up when another needs help, by sitting and making space to receive another’s thoughts and intentions, by accepting and returning love and compassion – which are available in abundance when living in community – we allow ourselves, our neighbors, and our community to rise to our true potential: an inherently collaborative, social being.</li></ul>
+
+          T: Transformative Experiences<br>
+          <ul><li>
+          As Socrates boldly states, “The unexamined life is not worth living.” Life is an adventure, full of challenges and opportunities. We strive to continually reflect, transform, and reaffirm ourselves and our communities, through creating and hosting physical, emotional, and spiritual spaces that foster both individual and collective growth.</li></ul>
+
+          S: Sustainability<br>
+          <ul><li>
+          Sustainability is a multifaceted paradigm, in which we seek to balance ecological, economic, and cultural sustainability. We strive to build a model for communities of today and tomorrow by understanding how our actions play a role in the delicate balance of our ecosystems. Through harnessing the power of networks and collectives to increase collective impact while driving down personal cost, yet valuing long-term success over short-term gains, we strive to support community systems which sustain themselves and our communities as well. And by encouraging self-identification and the expression of connection and belonging, we strive to build a community that grows from within.</li></ul>
+
+          Gratitude<br>
+          <ul><li>
+          Gratitude is our highest value. Upon the foundations of our Community PACTS, we strive to ascend to the highest value, which is more than gratitude in a traditional sense. We see how the practice of gratitude yields happiness and contentment, while other meditation shows that acceptance – which is actually just gratitude for something as it is – is the embodiment of true love. Within this understanding, we think practicing gratitude leads to both happiness as well as love, which is both the foundation for, and the highest expression of our community.
+          </li></ul>
+
+          <table border="1" style="width:100%">
+            <tr>
+              <td><span style="font-size: 20px;font-weight:bold">  Service</span></td>
+              <td><span style="font-weight:bold;font-size: 20px">  Responsibility</span></td> 
+            </tr>
+            <tr>
+              <td><ul><li>2 people/dome</li>
+                  <li>garden</li>
+                  <li>laundry</li>
+                  <li>community dinner</li>
+                  </td>
+
+              <td><ul><li>Monthly rent: $396</li>
+                  <li>Weekly meeting 2 hour</li>
+                  <li>Work party 5 hour</li>
+                  <li>Cook for community dinner weekly</li>
+              </td> 
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id ="contact">
+          <br><br>
+          <h2 style="color:black;font-family:verdana">Chateau Ubuntu</h2>
+          <table><tbody><tr><td style="background-color: rgb(232, 236, 239);">
+            <strong>Location</strong></td>
+            </tr><tr><td>
+                  <a href="/davis/Baggins_End">860 FELL STREET, SF 94117</a></td>
+            </tr><tr><td style="background-color: rgb(232, 236, 239);">
+                <strong>Email</strong></td>
+            </tr><tr><td>
+                <a href="mailto:860fell@chateauubuntu.org">860fell@chateauubuntu.org</a></td>
+            </tr><tr><td style="background-color: rgb(232, 236, 239);">
+                <strong>Website</strong></td>
+            </tr><tr><td>
+                <a href="http://www.ubuntusf.org/">http://www.ubuntusf.org/</a></td>
+            </tr><tr><td style="background-color: rgb(232, 236, 239);">
+                <strong>Established</strong></td>
+            </tr><tr><td>
+                2015</td>
+            </tr><tr><td style="background-color: rgb(232, 236, 239);">
+                <strong>How to apply</strong></td>
+            </tr><tr><td>
+                https://chateauubuntu.typeform.com/to/gm0I9Q</td>
+            </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <h2 style="color:black;font-family:verdana"><ul>Local community</ul></h2>
+    <iframe width="100%" height="300px" frameBorder="0" src="http://umap.openstreetmap.fr/en/map/sf-bay-area-community-sharing-map_80919?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+    <p><a href="http://umap.openstreetmap.fr/en/map/sf-bay-area-community-sharing-map_80919">See full screen</a></p>
+
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html>

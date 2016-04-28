@@ -1,0 +1,45 @@
+<style>
+
+.navbar-inner {
+    height: 80px;  
+}
+
+#slide {
+    background-color:white;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 5%; 
+    max-width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#table {
+    width:100%;
+    float:left;
+    padding-left: 5%; 
+}
+
+#map {
+    width:100%;
+    float:right;
+    padding: 5%;
+    margin: 10px;
+}
+
+#contact {
+    width:100%;
+    float:right;
+    padding-right: 5%; 
+    position:fixed;
+    z-index: -1;
+}
+
+.h2 {
+    color: black;
+}
+
+</style>
