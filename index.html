@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Coopedia</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<head>
 
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <title>Coopedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+        position: relative;
+    }
+    ul.nav-pills {
+        top: 20px;
+        position: fixed;
+    }
+    div.col-sm-9 div {
+        font-size: 15px;
+    }
+    
+    @media screen and (max-width: 810px) {
+      #section1, #section2, #section3, #section41, #section42  {
+          margin-left: 150px;
+      }
+    }
+  </style>
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
     function initialize() {
       var mapProp = {
@@ -20,77 +39,92 @@
       var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
+  </script>
 
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Coopedia</a>
-        </div>
+</head>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav w3-green w3-large">
-            <li class="active"><a href="#">Homepage<span class="sr-only">(current)</span></a></li>
-            <li><a href="https://medium.com/@master97/" target="_blank">Blog</a></li>
-           
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          
-          </ul>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Coopedia</a>
+      </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav w3-green w3-large">
+          <li class="active"><a href="#">Homepage<span class="sr-only">(current)</span></a></li>
+          <li><a href="https://medium.com/@master97/" target="_blank">Blog</a></li>
+         
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        
+        </ul>
 
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <div id ="slide">
-          <img class="mySlides" src="https://github.com/evangeline97/coopedia/blob/gh-pages/images/1.JPG" style="width:100%">
-          <img class="mySlides" src="https://github.com/evangeline97/coopedia/blob/gh-pages/images/2.JPG" style="width:100%">
-        </div>
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <br><br>
+          <li class="active"><a href="#section1">Value</a></li>
+          <li><a href="#section2">Service</a></li>
+          <li><a href="#section3">Contact</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>                     
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-        <div id ="table">
-          <h2>Understanding the Domes and Our Values:</h2>
+      <div class="col-sm-9">
+        <div id="section1">   
+          <br><br> 
+                   <h2>Understanding the Domes and Our Values:</h2>
           <p class="MsoNormal">
             The Domes at Baggins End is a living-learning community that encourages critical thought, communication and cooperation between individuals and the community, active maintenance of an open and inclusive space, and resistance to consumerism and structures of oppression.</p>
           <p class="MsoNormal">
@@ -127,33 +161,9 @@
           <ul><li>
           Recognizing the intersectionality of ideas and movements and promoting solidarity between them</li>
           </ul>
-          
-          <table border="1" style="width:100%">
-            <tr>
-              <td><span style="font-size: 20px;font-weight:bold">  Service</span></td>
-              <td><span style="font-weight:bold;font-size: 20px">  Responsibility</span></td> 
-            </tr>
-            <tr>
-              <td><ul><li>2 people/dome</li>
-                  <li>garden</li>
-                  <li>laundry</li>
-                  <li>community dinner</li>
-                  </td>
-
-              <td><ul><li>Monthly rent: $396</li>
-                  <li>Weekly meeting 2 hour</li>
-                  <li>Work party 5 hour</li>
-                  <li>Cook for community dinner weekly</li>
-              </td> 
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div id ="contact">
-          <br><br>
-          <h2 style="color:black;font-family:verdana">The Domes</h2>
+        </div>   
+   
+        <div id="section3">         
           <table><tbody><tr><td style="background-color: rgb(232, 236, 239);">
             <strong>Location</strong></td>
             </tr><tr><td>
@@ -182,19 +192,46 @@
             </tr></tbody>
           </table>
         </div>
+        
+        <div id="section41">         
+          <table><tbody><tr>
+            <td><span style="font-size: 20px;font-weight:bold">  Service</span></td>
+            <td><span style="font-weight:bold;font-size: 20px">  Responsibility</span></td> 
+          </tr>
+          <tr>
+            <td><ul><li>2 people/dome</li>
+                <li>garden</li>
+                <li>laundry</li>
+                <li>community dinner</li>
+                </td>
+
+            <td><ul><li>Monthly rent: $396</li>
+                <li>Weekly meeting 2 hour</li>
+                <li>Work party 5 hour</li>
+                <li>Cook for community dinner weekly</li>
+            </td> 
+          </tr>
+        </div> 
+        </tbody></table>
+
+        <div id="section42">         
+          <div id ="slide">
+            <img class="mySlides" src="images/1.JPG" style="width:100%">
+            <img class="mySlides" src="images/2.JPG" style="width:100%">
+          </div>
+        </div>       
       </div>
     </div>
+  </div>
 
     <br>
     <h2 style="color:black;font-family:verdana"><ul>Local community</ul></h2>
     <iframe width="100%" height="300px" frameBorder="0" src="http://umap.openstreetmap.fr/en/map/sf-bay-area-community-sharing-map_80919?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
     <p><a href="http://umap.openstreetmap.fr/en/map/sf-bay-area-community-sharing-map_80919">See full screen</a></p>
 
-
     <script>
     var myIndex = 0;
     carousel();
-
     function carousel() {
         var i;
         var x = document.getElementsByClassName("mySlides");
@@ -208,5 +245,6 @@
     }
     </script>
 
-  </body>
-</html>
+
+</body>
+</html>                                		
